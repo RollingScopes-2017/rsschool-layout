@@ -1,0 +1,122 @@
+body {
+    height: 2000px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.container {
+    width: 1020px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section:after {
+    clear: right;
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+
+.central-block {
+    padding: 60px;
+    font-size: 2rem;
+    border: 3px solid black;
+    position: absolute;
+    width: 1020px;
+    height: 1750px;
+}
+
+.central-block p{
+    text-align: justify;
+}
+
+.central-block .awesome {
+    float: left;
+    width: 40%;
+    height: auto;
+    margin: 0 30px 30px 0;
+}
+
+.central-block .css-to-html {
+    float: right;
+    width: 30%;
+    height: auto;
+    margin-left: 30px;
+}
+
+.layer--external {
+    background-color: #ebebeb;
+    z-index: 4;
+}
+
+.layer--central {
+    background-color: #ccc;
+    margin: 40px 0 0 40px;
+    z-index: 2;
+}
+
+.layer--internal {
+    background-color: #acacac;
+    margin: 80px 0 0 80px;
+    z-index: 0;
+}
+
+.css-pun {
+    width: 440px;
+    height: 220px;
+    display: inline;
+    margin: 20px; 
+}
+
+.css-pun:nth-child(2n) {
+    float: right;
+}
+
+.annotation p {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center; 
+}
+
+.bookmark {
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    border: 3px solid black;
+    border-radius: 0 20px 20px 0;
+}
+
+.external {
+    background-color: #f68e56;
+    z-index: 5;
+    top: 140px;
+    left: 1100px;
+}
+
+.center {
+    background-color: #39b54a;
+    z-index: 3;
+    top: 185px;
+    left: 1080px;
+}
+
+.internal {
+    background-color: #00aeef;
+    z-index: 1;
+    top: 230px;
+    left: 1060px;
+}
+
+.social {
+    width: 170px;
+    height: 150px;
+    background-color: #fbaf5d;
+    border: 3px solid black; 
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 777;
+    text-align: center;
+    font-size: 2rem;
+}
+
